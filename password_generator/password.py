@@ -2,15 +2,6 @@ import random
 import string
 
 
-# decorator function to format password generator
-def pass_decorator(func):
-    def wrap_pass():
-        print("Your New password")
-        func()
-        print("*-"*5 + "\nThank you.")
-    return wrap_pass()
-
-
 class Password(object):
     """
     static method will perform the random password generator
@@ -21,9 +12,8 @@ class Password(object):
     def __init__(self, scale):
         self.scale = scale
 
-    @pass_decorator
     def generate_pass(self):
-        return ''.join(random.choice(string.ascii_letters + string.digits + ".',={}[]-/|\£$%^&*()_+~#@?><") for _ in range(self.scale))
+        return "New Password: " + ''.join(random.choice(string.ascii_letters + string.digits + ".',={}[]-/|\£$%^&*()_+~#@?><") for _ in range(self.scale))
 
     @staticmethod
     def validate_scale(n):
@@ -32,18 +22,27 @@ class Password(object):
 
 def user_request():
     # request user pass and store user response
-    user_req = input("New Password?")
-    hard_pass_opt = input("How strong a password? Scale from 1-10")
+    hard_pass_opt = input("How strong a password do you want? Scale from 1-10 ")
+    hard_pass_opt = int(hard_pass_opt)
     # call generate pass
-    user_req = user_req.upper()
     if Password.validate_scale(hard_pass_opt):
         try:
-            if user_req == "Y" or user_req == "YES":
-                new_password = Password(hard_pass_opt)
-                return new_password.generate_pass()
+            new_password = Password(hard_pass_opt)
+            return new_password.generate_pass()
         except TypeError:
             return "Oh Shacks! Error. Please Try again."
     else:
         return "Please enter a valid number for your scale."
 
-print(user_request())
+
+# decorator function to format password generator
+def pass_decorator(func):
+    def wrap_pass():
+        func()
+        print("*-" * 5 + "\nThank you."+"\n-*"*5)
+    return wrap_pass()
+
+
+@pass_decorator
+def print_pass():
+    print(user_request())
