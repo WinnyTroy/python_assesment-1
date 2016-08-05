@@ -8,17 +8,24 @@
 # Use __init__ method to construct some parameters
 
 # Solution:
+import unittest
+
 
 class InputOutString(object):
-    def __init__(self, input_str):
-        self.input = input_str
+    @staticmethod
+    def getString():
+        user = input("Input a string: ")
+        return user.upper()
 
-    def getString(self):
-        str = input("")
+    @staticmethod
+    def printString():
+        return InputOutString.getString()
 
-    def printString(self):
-        return self.getString()
+cl = InputOutString()
+print(cl.printString())
 
-user = input("")
-cl = InputOutString(user)
-cl.printString()
+
+class Tests(unittest.TestCase):
+    def test1(self):
+        user = cl.printString()
+        self.assertEqual(user.upper(), user)
