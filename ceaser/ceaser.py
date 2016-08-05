@@ -36,7 +36,7 @@ class CaesarCipher(object):
         return "".join(out)
 
 # use raw_input() for Python 2.7
-user_phrase = input("Caeser cipher for today? ")
+user_phrase = input("Caesar cipher for today? ")
 user_numming = input("Number to cipher?")
 
 
@@ -53,9 +53,9 @@ def print_cipher():
         print("Loading...")
         try:
             print("Your cipher: %s" % cc.cipher())
-            print("*-"*10 + "\nThank you.")
+            print("*-"*5 + "\nThank you.")
         except TypeError:
-            print("Well, this is embarassing. Error found :(. Please try again.")
+            print("Well, this is embarrassing. Error found :(. Please try again.")
     else:
         print("Please enter a valid number.")
 

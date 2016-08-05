@@ -13,19 +13,19 @@ import unittest
 
 class InputOutString(object):
     @staticmethod
-    def getString():
+    def get_string():
         user = input("Input a string: ")
         return user.upper()
 
     @staticmethod
-    def printString():
-        return InputOutString.getString()
+    def print_string():
+        return InputOutString.get_string()
 
 cl = InputOutString()
-print(cl.printString())
+print(cl.print_string())
 
 
 class Tests(unittest.TestCase):
     def test1(self):
-        user = cl.printString()
+        user = cl.print_string()
         self.assertEqual(user.upper(), user)
