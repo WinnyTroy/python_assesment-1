@@ -6,14 +6,16 @@ class KeyPress(object):
     Create the dictionary to store the numbers as keys and the list of strings as values
     Create a counter variable to store counts whenever a letter is found in the key-value pairing.
     Convert the input string to uppercase for easier dictionary 'parsing'
-    loop through dictionary keys and loop through the strings, checking if each letter in the string is in the value of the key.
+    loop through dictionary keys and loop through the strings, checking if each letter in the string is in the value of the key(list).
+     :returns key count, how many presses are made on the keypad
+     :arg takes in a phrase
     """
     def __init__(self, phrase):
         self.phrase = phrase
 
     def presses(self):
-        # converts the string to upper and stores in variable,
-        phrase = self.phrase.upper()
+        # converts the string to upper, and stores in variable,
+        phrase = self.phrase.upper()  # .replace(" ", "")
         # creates a counter variable
         key_count = 0
         KEYS = {"1": ["1"], "2": ["A", "B", "C", "2"], "3": ["D", "E", "F", "3"],
@@ -23,8 +25,13 @@ class KeyPress(object):
                 }
         # perform loop
         for k in KEYS.keys():
+            curr_list = KEYS.get(k)
             for letter in phrase:
-                if letter in KEYS.get(k):
+                if letter in curr_list:
+                    # add 1, as indexes start from 0
+                    key_count += curr_list.index(letter) + 1
+        return key_count
+
 
 class Tests(unittest.TestCase):
     def test1(self):
@@ -36,7 +43,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(9, press.presses())
 
     def test3(self):
-        press = KeyPress("How R  2day")
+        press = KeyPress("How R u 2day")
         self.assertEqual(23, press.presses())
 
     def test4(self):
