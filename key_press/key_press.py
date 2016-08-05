@@ -18,14 +18,15 @@ class KeyPress(object):
         phrase = self.phrase.upper()  # .replace(" ", "")
         # creates a counter variable
         key_count = 0
-        KEYS = {"1": ["1"], "2": ["A", "B", "C", "2"], "3": ["D", "E", "F", "3"],
-                "4": ["G", "H", "I", "4"], "5": ["J", "K", "L", "5"], "6": ["M", "N", "O", "6"],
-                "7": ["P", "Q", "R", "S", "7"], "8": ["T", "U", "V", "8"], "9": ["W", "X", "Y", "Z", "9"],
-                "*": ["*"], "0": [" ", "0"], "#": ["#"]
-                }
+        keys_dict = {"1": ["1"], "2": ["A", "B", "C", "2"], "3": ["D", "E", "F", "3"],
+                     "4": ["G", "H", "I", "4"], "5": ["J", "K", "L", "5"], "6": ["M", "N", "O", "6"],
+                     "7": ["P", "Q", "R", "S", "7"], "8": ["T", "U", "V", "8"], "9": ["W", "X", "Y", "Z", "9"],
+                     "*": ["*"], "0": [" ", "0"], "#": ["#"]
+                     }
+
         # perform loop
-        for k in KEYS.keys():
-            curr_list = KEYS.get(k)
+        for k in keys_dict.keys():
+            curr_list = keys_dict.get(k)
             for letter in phrase:
                 if letter in curr_list:
                     # add 1, as indexes start from 0
