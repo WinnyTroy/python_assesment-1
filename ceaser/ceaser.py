@@ -49,9 +49,15 @@ def validate_numming(numming):
 def print_cipher():
     cc = CaesarCipher(user_phrase, user_numming)
     # check for validation pass
-    if validate_numming(user_numming):
+    if validate_numming(int(user_numming)):
         print("Loading...")
-        print(cc.cipher())
-        print("*-*-*"*10)
+        try:
+            print(cc.cipher())
+            print("*-*-*"*10)
+        except TypeError:
+            print("Well, this is embarassing. Error found :(. Please try again.")
     else:
         print("Please enter a valid number.")
+
+# call print_cipher
+print_cipher()
