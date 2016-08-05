@@ -8,5 +8,17 @@
 # Use __init__ method to construct some parameters
 
 # Solution:
+
 class InputOutString(object):
-    # code goes here
+    def __init__(self, input_str):
+        self.input = input_str
+
+    def getString(self):
+        str = input("")
+
+    def printString(self):
+        return self.getString()
+
+user = input("")
+cl = InputOutString(user)
+cl.printString()
