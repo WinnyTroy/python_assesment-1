@@ -7,7 +7,6 @@
 
 # more on cipher visit http://practicalcryptography.com/ciphers/caesar-cipher/
 # happy coding :-)
-import unittest
 
 
 class CaesarCipher(object):
@@ -17,29 +16,37 @@ class CaesarCipher(object):
     :returns the cipher as per the numing number
 
     """
-    def __init__(self, caeser):
+    def __init__(self, caeser, num):
         self.caeser = caeser
+        self.num = num
 
-    def cipher(self, num):
+    def cipher(self):
         string, out = self.caeser, []
         for word in string:
             for x in word:
                 if x != " ":
-                    out.append(chr(ord(x) + num))
+                    out.append(chr(ord(x) + self.num))
                 else:
                     out.append(x)
         return "".join(out)
 
     # variation two, using list compression in loop
-    def cipher_two(self, num):
+    def cipher_two(self):
         ciph, out = self.caeser, []
         for word in ciph:
-            out = [chr(ord(x) + num) for x in word if x != " "]
+            out = [chr(ord(x) + self.num) for x in word if x != " "]
         return "".join(out)
 
-c = CaesarCipher("A Crazy fool Z")
-c1 = CaesarCipher("Caesar Cipher")
-print(c.cipher(1))
-print(c1.cipher(2))
+# use raw_input() for Python 2.7
+user_phrase = input("Caeser cipher for today? ")
+user_numming = input("Number to cipher? ")
 
-class Tests(unittest.TestCase):
+# function to validate numming, must be an integer
+def validate_numming(numming):
+    return isinstance(numming, int)
+
+c = CaesarCipher("A Crazy fool Z", 1)
+c1 = CaesarCipher("Caesar Cipher", 2)
+print(c.cipher())
+print(c1.cipher())
+
