@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="761f7295-eab7-4c95-b9b6-a082afc9e22b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ceaser/ceaser.py" afterPath="$PROJECT_DIR$/ceaser/ceaser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class_reverse/reverse.py" afterPath="$PROJECT_DIR$/class_reverse/reverse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/password_generator/password.py" afterPath="$PROJECT_DIR$/password_generator/password.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme_solutions/question_one.py" afterPath="$PROJECT_DIR$/readme_solutions/question_one.py" />
     </list>
     <ignored path="python_assesment-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,21 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="password.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/password_generator/password.py">
+      <file leaf-file-name="question_one.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme_solutions/question_one.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ceaser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ceaser/ceaser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+            <state relative-caret-position="252">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,7 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/readme_solutions/question_one.py" />
         <option value="$PROJECT_DIR$/readme_solutions/question_three.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/xoxo/xoxo.py" />
@@ -84,13 +71,14 @@
         <option value="$PROJECT_DIR$/readme_solutions/question2.py" />
         <option value="$PROJECT_DIR$/key_press/key_press.py" />
         <option value="$PROJECT_DIR$/class_reverse/reverse.py" />
-        <option value="$PROJECT_DIR$/password_generator/password.py" />
         <option value="$PROJECT_DIR$/ceaser/ceaser.py" />
+        <option value="$PROJECT_DIR$/password_generator/password.py" />
+        <option value="$PROJECT_DIR$/readme_solutions/question_one.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1431" />
     <option name="y" value="24" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
@@ -288,29 +276,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.ceaser">
-    <configuration default="false" name="Unittest Tests.test4 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/key_press" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_assesment-1" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/key_press/key_press.py" />
-      <option name="CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.password">
     <configuration default="false" name="Unittests in key_press" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -390,6 +356,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_assesment-1" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ceaser/ceaser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="password" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/password_generator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_assesment-1" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/password_generator/password.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -529,19 +512,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Tests.test4 (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in key_press" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ceaser" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in key_press" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ceaser" />
+      <item index="4" class="java.lang.String" itemvalue="Python.password" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ceaser" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in key_press" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Tests.test4 (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.password" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ceaser" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in key_press (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in key_press" />
       </list>
     </recent_temporary>
   </component>
@@ -591,7 +574,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="1431" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -602,7 +585,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -629,14 +612,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme_solutions/question_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1890">
@@ -669,14 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme_solutions/question2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/key_press/key_press.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -701,6 +668,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ceaser/ceaser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/password_generator/password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme_solutions/question2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
@@ -715,18 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/password_generator/password.py">
+    <entry file="file://$PROJECT_DIR$/readme_solutions/question_one.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ceaser/ceaser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
