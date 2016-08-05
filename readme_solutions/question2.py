@@ -1,7 +1,7 @@
 prompt = '> '
-s = raw_input(prompt)
+s = input(prompt)
 
 
 def switch():
-    print s.upper()
+    print(s.upper())
 switch() 
