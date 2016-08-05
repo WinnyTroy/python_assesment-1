@@ -45,7 +45,7 @@ def validate_numming(numming):
     return isinstance(numming, int)
 
 
-# print cipher
+# print cipher function that performs checks and catches errors
 def print_cipher():
     # check for validation pass
     if validate_numming(int(user_numming)):
@@ -53,7 +53,7 @@ def print_cipher():
         print("Loading...")
         try:
             print("Your cipher: %s" % cc.cipher())
-            print("*-"*10)
+            print("*-"*10 + "\nThank you.")
         except TypeError:
             print("Well, this is embarassing. Error found :(. Please try again.")
     else:
