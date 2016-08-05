@@ -11,17 +11,15 @@
 
 class CaesarCipher(object):
     """
-
     cipher: takes in string and numing number
     :returns the cipher as per the numing number
-
     """
-    def __init__(self, caeser, num):
-        self.caeser = caeser
+    def __init__(self, caesar, num):
+        self.caesar = caesar
         self.num = num
 
     def cipher(self):
-        string, out = self.caeser, []
+        string, out = self.caesar, []
         for word in string:
             for x in word:
                 if x != " ":
@@ -32,21 +30,28 @@ class CaesarCipher(object):
 
     # variation two, using list compression in loop
     def cipher_two(self):
-        ciph, out = self.caeser, []
+        ciph, out = self.caesar, []
         for word in ciph:
             out = [chr(ord(x) + self.num) for x in word if x != " "]
         return "".join(out)
 
 # use raw_input() for Python 2.7
 user_phrase = input("Caeser cipher for today? ")
-user_numming = input("Number to cipher? ")
+user_numming = input("Number to cipher?")
+
 
 # function to validate numming, must be an integer
 def validate_numming(numming):
     return isinstance(numming, int)
 
-c = CaesarCipher("A Crazy fool Z", 1)
-c1 = CaesarCipher("Caesar Cipher", 2)
-print(c.cipher())
-print(c1.cipher())
 
+# print cipher
+def print_cipher():
+    cc = CaesarCipher(user_phrase, user_numming)
+    # check for validation pass
+    if validate_numming(user_numming):
+        print("Loading...")
+        print(cc.cipher())
+        print("*-*-*"*10)
+    else:
+        print("Please enter a valid number.")
