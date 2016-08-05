@@ -7,25 +7,39 @@
 
 # more on cipher visit http://practicalcryptography.com/ciphers/caesar-cipher/
 # happy coding :-)
-import re
 import unittest
 
 
 class CaesarCipher(object):
     """
-    cipher method checks through each letter, to
+
+    cipher: takes in string and numing number
+    :returns the cipher as per the numing number
+
     """
     def __init__(self, caeser):
         self.caeser = caeser
 
     def cipher(self, num):
-        string = self.caeser
-        out = []
+        string, out = self.caeser, []
         for word in string:
             for x in word:
-                out.append(chr(ord(x) + num))
-        print(out)
-        return " ".join(out)
+                if x != " ":
+                    out.append(chr(ord(x) + num))
+                else:
+                    out.append(x)
+        return "".join(out)
+
+    # variation two, using list compression in loop
+    def cipher_two(self, num):
+        ciph, out = self.caeser, []
+        for word in ciph:
+            out = [chr(ord(x) + num) for x in word if x != " "]
+        return "".join(out)
 
 c = CaesarCipher("A Crazy fool Z")
+c1 = CaesarCipher("Caesar Cipher")
 print(c.cipher(1))
+print(c1.cipher(2))
+
+class Tests(unittest.TestCase):
