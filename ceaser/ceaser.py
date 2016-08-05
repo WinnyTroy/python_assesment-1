@@ -22,7 +22,6 @@ class CaesarCipher(object):
         string = self.caeser
         out = []
         for word in string:
-            if re.match()
             for x in word:
                 out.append(chr(ord(x) + num))
         print(out)
